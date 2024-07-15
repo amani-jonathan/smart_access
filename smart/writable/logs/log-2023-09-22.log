@@ -1,0 +1,72 @@
+CRITICAL - 2023-09-22 12:02:51 --> Invalid file: "auth/accueil.php"
+in SYSTEMPATH\Exceptions\FrameworkException.php on line 39.
+ 1 SYSTEMPATH\View\View.php(214): CodeIgniter\Exceptions\FrameworkException::forInvalidFile('auth/accueil.php')
+ 2 SYSTEMPATH\Common.php(1188): CodeIgniter\View\View->render('auth/accueil', [], true)
+ 3 APPPATH\Controllers\Auth.php(46): view('auth/accueil')
+ 4 SYSTEMPATH\CodeIgniter.php(919): App\Controllers\Auth->dashboard()
+ 5 SYSTEMPATH\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Auth))
+ 6 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-09-22 12:04:26 --> Invalid file: "auth/accueil.php"
+in SYSTEMPATH\Exceptions\FrameworkException.php on line 39.
+ 1 SYSTEMPATH\View\View.php(214): CodeIgniter\Exceptions\FrameworkException::forInvalidFile('auth/accueil.php')
+ 2 SYSTEMPATH\Common.php(1188): CodeIgniter\View\View->render('auth/accueil', [], true)
+ 3 APPPATH\Controllers\Auth.php(46): view('auth/accueil')
+ 4 SYSTEMPATH\CodeIgniter.php(919): App\Controllers\Auth->dashboard()
+ 5 SYSTEMPATH\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Auth))
+ 6 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-09-22 12:04:46 --> Invalid file: "accueil.php"
+in SYSTEMPATH\Exceptions\FrameworkException.php on line 39.
+ 1 SYSTEMPATH\View\View.php(214): CodeIgniter\Exceptions\FrameworkException::forInvalidFile('accueil.php')
+ 2 SYSTEMPATH\Common.php(1188): CodeIgniter\View\View->render('accueil', [], true)
+ 3 APPPATH\Controllers\Auth.php(46): view('accueil')
+ 4 SYSTEMPATH\CodeIgniter.php(919): App\Controllers\Auth->dashboard()
+ 5 SYSTEMPATH\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Auth))
+ 6 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-09-22 12:04:47 --> Invalid file: "accueil.php"
+in SYSTEMPATH\Exceptions\FrameworkException.php on line 39.
+ 1 SYSTEMPATH\View\View.php(214): CodeIgniter\Exceptions\FrameworkException::forInvalidFile('accueil.php')
+ 2 SYSTEMPATH\Common.php(1188): CodeIgniter\View\View->render('accueil', [], true)
+ 3 APPPATH\Controllers\Auth.php(46): view('accueil')
+ 4 SYSTEMPATH\CodeIgniter.php(919): App\Controllers\Auth->dashboard()
+ 5 SYSTEMPATH\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Auth))
+ 6 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-09-22 12:04:48 --> Invalid file: "accueil.php"
+in SYSTEMPATH\Exceptions\FrameworkException.php on line 39.
+ 1 SYSTEMPATH\View\View.php(214): CodeIgniter\Exceptions\FrameworkException::forInvalidFile('accueil.php')
+ 2 SYSTEMPATH\Common.php(1188): CodeIgniter\View\View->render('accueil', [], true)
+ 3 APPPATH\Controllers\Auth.php(46): view('accueil')
+ 4 SYSTEMPATH\CodeIgniter.php(919): App\Controllers\Auth->dashboard()
+ 5 SYSTEMPATH\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Auth))
+ 6 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-09-22 14:06:39 --> Invalid file: "qrcode.php"
+in SYSTEMPATH\Exceptions\FrameworkException.php on line 39.
+ 1 SYSTEMPATH\View\View.php(214): CodeIgniter\Exceptions\FrameworkException::forInvalidFile('qrcode.php')
+ 2 SYSTEMPATH\Common.php(1188): CodeIgniter\View\View->render('qrcode', [], true)
+ 3 APPPATH\Controllers\Auth.php(51): view('qrcode')
+ 4 SYSTEMPATH\CodeIgniter.php(919): App\Controllers\Auth->validation()
+ 5 SYSTEMPATH\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Auth))
+ 6 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-09-22 14:07:23 --> Invalid file: "qauth/rcode.php"
+in SYSTEMPATH\Exceptions\FrameworkException.php on line 39.
+ 1 SYSTEMPATH\View\View.php(214): CodeIgniter\Exceptions\FrameworkException::forInvalidFile('qauth/rcode.php')
+ 2 SYSTEMPATH\Common.php(1188): CodeIgniter\View\View->render('qauth/rcode', [], true)
+ 3 APPPATH\Controllers\Auth.php(51): view('qauth/rcode')
+ 4 SYSTEMPATH\CodeIgniter.php(919): App\Controllers\Auth->validation()
+ 5 SYSTEMPATH\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Auth))
+ 6 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-09-22 14:07:24 --> Invalid file: "qauth/rcode.php"
+in SYSTEMPATH\Exceptions\FrameworkException.php on line 39.
+ 1 SYSTEMPATH\View\View.php(214): CodeIgniter\Exceptions\FrameworkException::forInvalidFile('qauth/rcode.php')
+ 2 SYSTEMPATH\Common.php(1188): CodeIgniter\View\View->render('qauth/rcode', [], true)
+ 3 APPPATH\Controllers\Auth.php(51): view('qauth/rcode')
+ 4 SYSTEMPATH\CodeIgniter.php(919): App\Controllers\Auth->validation()
+ 5 SYSTEMPATH\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Auth))
+ 6 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()

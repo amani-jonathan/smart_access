@@ -1,0 +1,985 @@
+INFO - 2023-11-13 09:54:24 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-11-13 09:54:24 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-11-13 10:18:00 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-11-13 10:18:00 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+ERROR - 2023-11-13 10:18:00 --> mysqli_sql_exception: Erreur de syntaxe près de '5' à la ligne 1 in C:\wamp64\www\smart\system\Database\MySQLi\Connection.php:306
+Stack trace:
+#0 C:\wamp64\www\smart\system\Database\MySQLi\Connection.php(306): mysqli->query('SELECT COUNT(*)...', 0)
+#1 C:\wamp64\www\smart\system\Database\BaseConnection.php(692): CodeIgniter\Database\MySQLi\Connection->execute('SELECT COUNT(*)...')
+#2 C:\wamp64\www\smart\system\Database\BaseConnection.php(606): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT COUNT(*)...')
+#3 C:\wamp64\www\smart\system\Database\BaseBuilder.php(1644): CodeIgniter\Database\BaseConnection->query('SELECT COUNT(*)...', NULL, false)
+#4 C:\wamp64\www\smart\app\Models\Nano.php(72): CodeIgniter\Database\BaseBuilder->countAll()
+#5 C:\wamp64\www\smart\app\Controllers\Admin.php(15): App\Models\Nano->query_count('SELECT * FROM d...')
+#6 C:\wamp64\www\smart\system\CodeIgniter.php(919): App\Controllers\Admin->index()
+#7 C:\wamp64\www\smart\system\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin))
+#8 C:\wamp64\www\smart\system\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#9 C:\wamp64\www\smart\index.php(79): CodeIgniter\CodeIgniter->run()
+#10 {main}
+CRITICAL - 2023-11-13 10:18:00 --> Erreur de syntaxe près de '5' à la ligne 1
+in SYSTEMPATH\Database\BaseConnection.php on line 646.
+ 1 SYSTEMPATH\Database\BaseBuilder.php(1644): CodeIgniter\Database\BaseConnection->query('SELECT COUNT(*) AS `numrows` FROM `SELECT * FROM demande ORDER BY date_rdv DESC LIMIT` 5', null, false)
+ 2 APPPATH\Models\Nano.php(72): CodeIgniter\Database\BaseBuilder->countAll()
+ 3 APPPATH\Controllers\Admin.php(15): App\Models\Nano->query_count('SELECT * FROM demande ORDER BY date_rdv DESC LIMIT 5 ')
+ 4 SYSTEMPATH\CodeIgniter.php(919): App\Controllers\Admin->index()
+ 5 SYSTEMPATH\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin))
+ 6 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+INFO - 2023-11-13 10:19:52 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-11-13 10:20:15 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-11-13 10:20:26 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-11-13 10:20:27 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-11-13 10:20:28 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-11-13 10:20:28 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-11-13 10:20:30 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-11-13 10:21:15 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-11-13 10:21:16 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-11-13 10:21:16 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-11-13 10:21:17 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-11-13 10:21:24 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-11-13 10:21:35 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-11-13 10:42:24 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+ERROR - 2023-11-13 10:42:24 --> mysqli_sql_exception: Champ 'user_demande' inconnu dans where clause in C:\wamp64\www\smart\system\Database\MySQLi\Connection.php:306
+Stack trace:
+#0 C:\wamp64\www\smart\system\Database\MySQLi\Connection.php(306): mysqli->query('SELECT * FROM d...', 0)
+#1 C:\wamp64\www\smart\system\Database\BaseConnection.php(692): CodeIgniter\Database\MySQLi\Connection->execute('SELECT * FROM d...')
+#2 C:\wamp64\www\smart\system\Database\BaseConnection.php(606): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT * FROM d...')
+#3 C:\wamp64\www\smart\app\Models\Nano.php(78): CodeIgniter\Database\BaseConnection->query('SELECT * FROM d...')
+#4 C:\wamp64\www\smart\app\Controllers\Admin.php(16): App\Models\Nano->query_counts('SELECT * FROM d...')
+#5 C:\wamp64\www\smart\system\CodeIgniter.php(919): App\Controllers\Admin->index()
+#6 C:\wamp64\www\smart\system\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin))
+#7 C:\wamp64\www\smart\system\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 C:\wamp64\www\smart\index.php(79): CodeIgniter\CodeIgniter->run()
+#9 {main}
+CRITICAL - 2023-11-13 10:42:24 --> Champ 'user_demande' inconnu dans where clause
+in SYSTEMPATH\Database\BaseConnection.php on line 646.
+ 1 APPPATH\Models\Nano.php(78): CodeIgniter\Database\BaseConnection->query('SELECT * FROM demande WHERE user_demande="" ')
+ 2 APPPATH\Controllers\Admin.php(16): App\Models\Nano->query_counts('SELECT * FROM demande WHERE user_demande="" ')
+ 3 SYSTEMPATH\CodeIgniter.php(919): App\Controllers\Admin->index()
+ 4 SYSTEMPATH\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin))
+ 5 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 6 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+INFO - 2023-11-13 10:43:42 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-11-13 10:44:05 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-11-13 10:46:31 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-11-13 10:47:39 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-11-13 10:47:41 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-11-13 10:47:56 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-11-13 10:48:20 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-11-13 10:48:31 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-11-13 10:51:20 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-11-13 11:12:30 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-11-13 13:11:14 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-11-13 13:14:54 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-11-13 13:16:31 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-11-13 13:37:17 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-11-13 13:37:25 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-11-13 13:38:18 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-11-13 13:42:50 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-11-13 13:45:49 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-11-13 13:45:49 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-11-13 13:45:49 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-11-13 13:45:49 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-11-13 13:45:49 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-11-13 13:58:49 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-11-13 13:58:49 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-11-13 13:58:49 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-11-13 13:58:49 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-11-13 13:58:49 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-11-13 13:58:50 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-11-13 13:58:50 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-11-13 13:58:50 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-11-13 13:58:50 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-11-13 13:58:50 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-11-13 13:58:50 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-11-13 13:58:50 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-11-13 13:58:50 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-11-13 13:58:51 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-11-13 13:58:51 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-11-13 13:59:00 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-11-13 13:59:01 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-11-13 13:59:06 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-11-13 13:59:06 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-11-13 13:59:06 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-11-13 13:59:06 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-11-13 13:59:06 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-11-13 13:59:18 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-11-13 13:59:18 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-11-13 13:59:19 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-11-13 13:59:19 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-11-13 13:59:50 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2023-11-13 13:59:50 --> Undefined variable: session
+in APPPATH\Controllers\Main.php on line 62.
+ 1 APPPATH\Controllers\Main.php(62): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined variable: session', 'C:\\wamp64\\www\\smart\\app\\Controllers\\Main.php', 62, [...])
+ 2 SYSTEMPATH\CodeIgniter.php(919): App\Controllers\Main->checking()
+ 3 SYSTEMPATH\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Main))
+ 4 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+INFO - 2023-11-13 13:59:50 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2023-11-13 13:59:50 --> Undefined variable: session
+in APPPATH\Controllers\Main.php on line 62.
+ 1 APPPATH\Controllers\Main.php(62): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined variable: session', 'C:\\wamp64\\www\\smart\\app\\Controllers\\Main.php', 62, [...])
+ 2 SYSTEMPATH\CodeIgniter.php(919): App\Controllers\Main->checking()
+ 3 SYSTEMPATH\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Main))
+ 4 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+INFO - 2023-11-13 13:59:50 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2023-11-13 13:59:50 --> Undefined variable: session
+in APPPATH\Controllers\Main.php on line 62.
+ 1 APPPATH\Controllers\Main.php(62): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined variable: session', 'C:\\wamp64\\www\\smart\\app\\Controllers\\Main.php', 62, [...])
+ 2 SYSTEMPATH\CodeIgniter.php(919): App\Controllers\Main->checking()
+ 3 SYSTEMPATH\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Main))
+ 4 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+INFO - 2023-11-13 13:59:51 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2023-11-13 13:59:51 --> Undefined variable: session
+in APPPATH\Controllers\Main.php on line 62.
+ 1 APPPATH\Controllers\Main.php(62): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined variable: session', 'C:\\wamp64\\www\\smart\\app\\Controllers\\Main.php', 62, [...])
+ 2 SYSTEMPATH\CodeIgniter.php(919): App\Controllers\Main->checking()
+ 3 SYSTEMPATH\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Main))
+ 4 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+INFO - 2023-11-13 13:59:51 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2023-11-13 13:59:51 --> Undefined variable: session
+in APPPATH\Controllers\Main.php on line 62.
+ 1 APPPATH\Controllers\Main.php(62): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined variable: session', 'C:\\wamp64\\www\\smart\\app\\Controllers\\Main.php', 62, [...])
+ 2 SYSTEMPATH\CodeIgniter.php(919): App\Controllers\Main->checking()
+ 3 SYSTEMPATH\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Main))
+ 4 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+INFO - 2023-11-13 13:59:51 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2023-11-13 13:59:51 --> Undefined variable: session
+in APPPATH\Controllers\Main.php on line 62.
+ 1 APPPATH\Controllers\Main.php(62): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined variable: session', 'C:\\wamp64\\www\\smart\\app\\Controllers\\Main.php', 62, [...])
+ 2 SYSTEMPATH\CodeIgniter.php(919): App\Controllers\Main->checking()
+ 3 SYSTEMPATH\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Main))
+ 4 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+INFO - 2023-11-13 13:59:51 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2023-11-13 13:59:51 --> Undefined variable: session
+in APPPATH\Controllers\Main.php on line 62.
+ 1 APPPATH\Controllers\Main.php(62): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined variable: session', 'C:\\wamp64\\www\\smart\\app\\Controllers\\Main.php', 62, [...])
+ 2 SYSTEMPATH\CodeIgniter.php(919): App\Controllers\Main->checking()
+ 3 SYSTEMPATH\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Main))
+ 4 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+INFO - 2023-11-13 13:59:51 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2023-11-13 13:59:51 --> Undefined variable: session
+in APPPATH\Controllers\Main.php on line 62.
+ 1 APPPATH\Controllers\Main.php(62): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined variable: session', 'C:\\wamp64\\www\\smart\\app\\Controllers\\Main.php', 62, [...])
+ 2 SYSTEMPATH\CodeIgniter.php(919): App\Controllers\Main->checking()
+ 3 SYSTEMPATH\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Main))
+ 4 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+INFO - 2023-11-13 13:59:51 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2023-11-13 13:59:51 --> Undefined variable: session
+in APPPATH\Controllers\Main.php on line 62.
+ 1 APPPATH\Controllers\Main.php(62): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined variable: session', 'C:\\wamp64\\www\\smart\\app\\Controllers\\Main.php', 62, [...])
+ 2 SYSTEMPATH\CodeIgniter.php(919): App\Controllers\Main->checking()
+ 3 SYSTEMPATH\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Main))
+ 4 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+INFO - 2023-11-13 13:59:51 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2023-11-13 13:59:51 --> Undefined variable: session
+in APPPATH\Controllers\Main.php on line 62.
+ 1 APPPATH\Controllers\Main.php(62): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined variable: session', 'C:\\wamp64\\www\\smart\\app\\Controllers\\Main.php', 62, [...])
+ 2 SYSTEMPATH\CodeIgniter.php(919): App\Controllers\Main->checking()
+ 3 SYSTEMPATH\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Main))
+ 4 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+INFO - 2023-11-13 13:59:51 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2023-11-13 13:59:51 --> Undefined variable: session
+in APPPATH\Controllers\Main.php on line 62.
+ 1 APPPATH\Controllers\Main.php(62): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined variable: session', 'C:\\wamp64\\www\\smart\\app\\Controllers\\Main.php', 62, [...])
+ 2 SYSTEMPATH\CodeIgniter.php(919): App\Controllers\Main->checking()
+ 3 SYSTEMPATH\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Main))
+ 4 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+INFO - 2023-11-13 13:59:51 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2023-11-13 13:59:51 --> Undefined variable: session
+in APPPATH\Controllers\Main.php on line 62.
+ 1 APPPATH\Controllers\Main.php(62): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined variable: session', 'C:\\wamp64\\www\\smart\\app\\Controllers\\Main.php', 62, [...])
+ 2 SYSTEMPATH\CodeIgniter.php(919): App\Controllers\Main->checking()
+ 3 SYSTEMPATH\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Main))
+ 4 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+INFO - 2023-11-13 13:59:51 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2023-11-13 13:59:51 --> Undefined variable: session
+in APPPATH\Controllers\Main.php on line 62.
+ 1 APPPATH\Controllers\Main.php(62): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined variable: session', 'C:\\wamp64\\www\\smart\\app\\Controllers\\Main.php', 62, [...])
+ 2 SYSTEMPATH\CodeIgniter.php(919): App\Controllers\Main->checking()
+ 3 SYSTEMPATH\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Main))
+ 4 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+INFO - 2023-11-13 13:59:52 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2023-11-13 13:59:52 --> Undefined variable: session
+in APPPATH\Controllers\Main.php on line 62.
+ 1 APPPATH\Controllers\Main.php(62): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined variable: session', 'C:\\wamp64\\www\\smart\\app\\Controllers\\Main.php', 62, [...])
+ 2 SYSTEMPATH\CodeIgniter.php(919): App\Controllers\Main->checking()
+ 3 SYSTEMPATH\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Main))
+ 4 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+INFO - 2023-11-13 13:59:52 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2023-11-13 13:59:52 --> Undefined variable: session
+in APPPATH\Controllers\Main.php on line 62.
+ 1 APPPATH\Controllers\Main.php(62): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined variable: session', 'C:\\wamp64\\www\\smart\\app\\Controllers\\Main.php', 62, [...])
+ 2 SYSTEMPATH\CodeIgniter.php(919): App\Controllers\Main->checking()
+ 3 SYSTEMPATH\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Main))
+ 4 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+INFO - 2023-11-13 13:59:52 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2023-11-13 13:59:52 --> Undefined variable: session
+in APPPATH\Controllers\Main.php on line 62.
+ 1 APPPATH\Controllers\Main.php(62): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined variable: session', 'C:\\wamp64\\www\\smart\\app\\Controllers\\Main.php', 62, [...])
+ 2 SYSTEMPATH\CodeIgniter.php(919): App\Controllers\Main->checking()
+ 3 SYSTEMPATH\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Main))
+ 4 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+INFO - 2023-11-13 13:59:52 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2023-11-13 13:59:52 --> Undefined variable: session
+in APPPATH\Controllers\Main.php on line 62.
+ 1 APPPATH\Controllers\Main.php(62): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined variable: session', 'C:\\wamp64\\www\\smart\\app\\Controllers\\Main.php', 62, [...])
+ 2 SYSTEMPATH\CodeIgniter.php(919): App\Controllers\Main->checking()
+ 3 SYSTEMPATH\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Main))
+ 4 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+INFO - 2023-11-13 13:59:53 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2023-11-13 13:59:53 --> Undefined variable: session
+in APPPATH\Controllers\Main.php on line 62.
+ 1 APPPATH\Controllers\Main.php(62): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined variable: session', 'C:\\wamp64\\www\\smart\\app\\Controllers\\Main.php', 62, [...])
+ 2 SYSTEMPATH\CodeIgniter.php(919): App\Controllers\Main->checking()
+ 3 SYSTEMPATH\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Main))
+ 4 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+INFO - 2023-11-13 13:59:53 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2023-11-13 13:59:53 --> Undefined variable: session
+in APPPATH\Controllers\Main.php on line 62.
+ 1 APPPATH\Controllers\Main.php(62): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined variable: session', 'C:\\wamp64\\www\\smart\\app\\Controllers\\Main.php', 62, [...])
+ 2 SYSTEMPATH\CodeIgniter.php(919): App\Controllers\Main->checking()
+ 3 SYSTEMPATH\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Main))
+ 4 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+INFO - 2023-11-13 13:59:53 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2023-11-13 13:59:53 --> Undefined variable: session
+in APPPATH\Controllers\Main.php on line 62.
+ 1 APPPATH\Controllers\Main.php(62): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined variable: session', 'C:\\wamp64\\www\\smart\\app\\Controllers\\Main.php', 62, [...])
+ 2 SYSTEMPATH\CodeIgniter.php(919): App\Controllers\Main->checking()
+ 3 SYSTEMPATH\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Main))
+ 4 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+INFO - 2023-11-13 13:59:53 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2023-11-13 13:59:53 --> Undefined variable: session
+in APPPATH\Controllers\Main.php on line 62.
+ 1 APPPATH\Controllers\Main.php(62): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined variable: session', 'C:\\wamp64\\www\\smart\\app\\Controllers\\Main.php', 62, [...])
+ 2 SYSTEMPATH\CodeIgniter.php(919): App\Controllers\Main->checking()
+ 3 SYSTEMPATH\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Main))
+ 4 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+INFO - 2023-11-13 13:59:53 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2023-11-13 13:59:53 --> Undefined variable: session
+in APPPATH\Controllers\Main.php on line 62.
+ 1 APPPATH\Controllers\Main.php(62): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined variable: session', 'C:\\wamp64\\www\\smart\\app\\Controllers\\Main.php', 62, [...])
+ 2 SYSTEMPATH\CodeIgniter.php(919): App\Controllers\Main->checking()
+ 3 SYSTEMPATH\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Main))
+ 4 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+INFO - 2023-11-13 13:59:53 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2023-11-13 13:59:54 --> Undefined variable: session
+in APPPATH\Controllers\Main.php on line 62.
+ 1 APPPATH\Controllers\Main.php(62): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined variable: session', 'C:\\wamp64\\www\\smart\\app\\Controllers\\Main.php', 62, [...])
+ 2 SYSTEMPATH\CodeIgniter.php(919): App\Controllers\Main->checking()
+ 3 SYSTEMPATH\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Main))
+ 4 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+INFO - 2023-11-13 13:59:54 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2023-11-13 13:59:54 --> Undefined variable: session
+in APPPATH\Controllers\Main.php on line 62.
+ 1 APPPATH\Controllers\Main.php(62): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined variable: session', 'C:\\wamp64\\www\\smart\\app\\Controllers\\Main.php', 62, [...])
+ 2 SYSTEMPATH\CodeIgniter.php(919): App\Controllers\Main->checking()
+ 3 SYSTEMPATH\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Main))
+ 4 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+INFO - 2023-11-13 13:59:54 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2023-11-13 13:59:54 --> Undefined variable: session
+in APPPATH\Controllers\Main.php on line 62.
+ 1 APPPATH\Controllers\Main.php(62): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined variable: session', 'C:\\wamp64\\www\\smart\\app\\Controllers\\Main.php', 62, [...])
+ 2 SYSTEMPATH\CodeIgniter.php(919): App\Controllers\Main->checking()
+ 3 SYSTEMPATH\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Main))
+ 4 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+INFO - 2023-11-13 13:59:54 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2023-11-13 13:59:54 --> Undefined variable: session
+in APPPATH\Controllers\Main.php on line 62.
+ 1 APPPATH\Controllers\Main.php(62): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined variable: session', 'C:\\wamp64\\www\\smart\\app\\Controllers\\Main.php', 62, [...])
+ 2 SYSTEMPATH\CodeIgniter.php(919): App\Controllers\Main->checking()
+ 3 SYSTEMPATH\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Main))
+ 4 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+INFO - 2023-11-13 13:59:54 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2023-11-13 13:59:54 --> Undefined variable: session
+in APPPATH\Controllers\Main.php on line 62.
+ 1 APPPATH\Controllers\Main.php(62): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined variable: session', 'C:\\wamp64\\www\\smart\\app\\Controllers\\Main.php', 62, [...])
+ 2 SYSTEMPATH\CodeIgniter.php(919): App\Controllers\Main->checking()
+ 3 SYSTEMPATH\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Main))
+ 4 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+INFO - 2023-11-13 13:59:54 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2023-11-13 13:59:54 --> Undefined variable: session
+in APPPATH\Controllers\Main.php on line 62.
+ 1 APPPATH\Controllers\Main.php(62): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined variable: session', 'C:\\wamp64\\www\\smart\\app\\Controllers\\Main.php', 62, [...])
+ 2 SYSTEMPATH\CodeIgniter.php(919): App\Controllers\Main->checking()
+ 3 SYSTEMPATH\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Main))
+ 4 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+INFO - 2023-11-13 13:59:54 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2023-11-13 13:59:54 --> Undefined variable: session
+in APPPATH\Controllers\Main.php on line 62.
+ 1 APPPATH\Controllers\Main.php(62): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined variable: session', 'C:\\wamp64\\www\\smart\\app\\Controllers\\Main.php', 62, [...])
+ 2 SYSTEMPATH\CodeIgniter.php(919): App\Controllers\Main->checking()
+ 3 SYSTEMPATH\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Main))
+ 4 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+INFO - 2023-11-13 13:59:54 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2023-11-13 13:59:54 --> Undefined variable: session
+in APPPATH\Controllers\Main.php on line 62.
+ 1 APPPATH\Controllers\Main.php(62): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined variable: session', 'C:\\wamp64\\www\\smart\\app\\Controllers\\Main.php', 62, [...])
+ 2 SYSTEMPATH\CodeIgniter.php(919): App\Controllers\Main->checking()
+ 3 SYSTEMPATH\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Main))
+ 4 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+INFO - 2023-11-13 13:59:54 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2023-11-13 13:59:54 --> Undefined variable: session
+in APPPATH\Controllers\Main.php on line 62.
+ 1 APPPATH\Controllers\Main.php(62): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined variable: session', 'C:\\wamp64\\www\\smart\\app\\Controllers\\Main.php', 62, [...])
+ 2 SYSTEMPATH\CodeIgniter.php(919): App\Controllers\Main->checking()
+ 3 SYSTEMPATH\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Main))
+ 4 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+INFO - 2023-11-13 13:59:54 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2023-11-13 13:59:54 --> Undefined variable: session
+in APPPATH\Controllers\Main.php on line 62.
+ 1 APPPATH\Controllers\Main.php(62): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined variable: session', 'C:\\wamp64\\www\\smart\\app\\Controllers\\Main.php', 62, [...])
+ 2 SYSTEMPATH\CodeIgniter.php(919): App\Controllers\Main->checking()
+ 3 SYSTEMPATH\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Main))
+ 4 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+INFO - 2023-11-13 13:59:54 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2023-11-13 13:59:54 --> Undefined variable: session
+in APPPATH\Controllers\Main.php on line 62.
+ 1 APPPATH\Controllers\Main.php(62): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined variable: session', 'C:\\wamp64\\www\\smart\\app\\Controllers\\Main.php', 62, [...])
+ 2 SYSTEMPATH\CodeIgniter.php(919): App\Controllers\Main->checking()
+ 3 SYSTEMPATH\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Main))
+ 4 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+INFO - 2023-11-13 13:59:54 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2023-11-13 13:59:54 --> Undefined variable: session
+in APPPATH\Controllers\Main.php on line 62.
+ 1 APPPATH\Controllers\Main.php(62): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined variable: session', 'C:\\wamp64\\www\\smart\\app\\Controllers\\Main.php', 62, [...])
+ 2 SYSTEMPATH\CodeIgniter.php(919): App\Controllers\Main->checking()
+ 3 SYSTEMPATH\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Main))
+ 4 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+INFO - 2023-11-13 13:59:54 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2023-11-13 13:59:54 --> Undefined variable: session
+in APPPATH\Controllers\Main.php on line 62.
+ 1 APPPATH\Controllers\Main.php(62): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined variable: session', 'C:\\wamp64\\www\\smart\\app\\Controllers\\Main.php', 62, [...])
+ 2 SYSTEMPATH\CodeIgniter.php(919): App\Controllers\Main->checking()
+ 3 SYSTEMPATH\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Main))
+ 4 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+INFO - 2023-11-13 13:59:55 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2023-11-13 13:59:55 --> Undefined variable: session
+in APPPATH\Controllers\Main.php on line 62.
+ 1 APPPATH\Controllers\Main.php(62): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined variable: session', 'C:\\wamp64\\www\\smart\\app\\Controllers\\Main.php', 62, [...])
+ 2 SYSTEMPATH\CodeIgniter.php(919): App\Controllers\Main->checking()
+ 3 SYSTEMPATH\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Main))
+ 4 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+INFO - 2023-11-13 13:59:55 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2023-11-13 13:59:55 --> Undefined variable: session
+in APPPATH\Controllers\Main.php on line 62.
+ 1 APPPATH\Controllers\Main.php(62): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined variable: session', 'C:\\wamp64\\www\\smart\\app\\Controllers\\Main.php', 62, [...])
+ 2 SYSTEMPATH\CodeIgniter.php(919): App\Controllers\Main->checking()
+ 3 SYSTEMPATH\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Main))
+ 4 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+INFO - 2023-11-13 13:59:55 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2023-11-13 13:59:55 --> Undefined variable: session
+in APPPATH\Controllers\Main.php on line 62.
+ 1 APPPATH\Controllers\Main.php(62): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined variable: session', 'C:\\wamp64\\www\\smart\\app\\Controllers\\Main.php', 62, [...])
+ 2 SYSTEMPATH\CodeIgniter.php(919): App\Controllers\Main->checking()
+ 3 SYSTEMPATH\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Main))
+ 4 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+INFO - 2023-11-13 13:59:55 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2023-11-13 13:59:55 --> Undefined variable: session
+in APPPATH\Controllers\Main.php on line 62.
+ 1 APPPATH\Controllers\Main.php(62): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined variable: session', 'C:\\wamp64\\www\\smart\\app\\Controllers\\Main.php', 62, [...])
+ 2 SYSTEMPATH\CodeIgniter.php(919): App\Controllers\Main->checking()
+ 3 SYSTEMPATH\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Main))
+ 4 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+INFO - 2023-11-13 13:59:55 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2023-11-13 13:59:55 --> Undefined variable: session
+in APPPATH\Controllers\Main.php on line 62.
+ 1 APPPATH\Controllers\Main.php(62): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined variable: session', 'C:\\wamp64\\www\\smart\\app\\Controllers\\Main.php', 62, [...])
+ 2 SYSTEMPATH\CodeIgniter.php(919): App\Controllers\Main->checking()
+ 3 SYSTEMPATH\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Main))
+ 4 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+INFO - 2023-11-13 13:59:55 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2023-11-13 13:59:55 --> Undefined variable: session
+in APPPATH\Controllers\Main.php on line 62.
+ 1 APPPATH\Controllers\Main.php(62): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined variable: session', 'C:\\wamp64\\www\\smart\\app\\Controllers\\Main.php', 62, [...])
+ 2 SYSTEMPATH\CodeIgniter.php(919): App\Controllers\Main->checking()
+ 3 SYSTEMPATH\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Main))
+ 4 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+INFO - 2023-11-13 13:59:55 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2023-11-13 13:59:55 --> Undefined variable: session
+in APPPATH\Controllers\Main.php on line 62.
+ 1 APPPATH\Controllers\Main.php(62): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined variable: session', 'C:\\wamp64\\www\\smart\\app\\Controllers\\Main.php', 62, [...])
+ 2 SYSTEMPATH\CodeIgniter.php(919): App\Controllers\Main->checking()
+ 3 SYSTEMPATH\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Main))
+ 4 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+INFO - 2023-11-13 13:59:55 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2023-11-13 13:59:55 --> Undefined variable: session
+in APPPATH\Controllers\Main.php on line 62.
+ 1 APPPATH\Controllers\Main.php(62): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined variable: session', 'C:\\wamp64\\www\\smart\\app\\Controllers\\Main.php', 62, [...])
+ 2 SYSTEMPATH\CodeIgniter.php(919): App\Controllers\Main->checking()
+ 3 SYSTEMPATH\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Main))
+ 4 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+INFO - 2023-11-13 13:59:55 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2023-11-13 13:59:55 --> Undefined variable: session
+in APPPATH\Controllers\Main.php on line 62.
+ 1 APPPATH\Controllers\Main.php(62): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined variable: session', 'C:\\wamp64\\www\\smart\\app\\Controllers\\Main.php', 62, [...])
+ 2 SYSTEMPATH\CodeIgniter.php(919): App\Controllers\Main->checking()
+ 3 SYSTEMPATH\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Main))
+ 4 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+INFO - 2023-11-13 13:59:55 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2023-11-13 13:59:55 --> Undefined variable: session
+in APPPATH\Controllers\Main.php on line 62.
+ 1 APPPATH\Controllers\Main.php(62): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined variable: session', 'C:\\wamp64\\www\\smart\\app\\Controllers\\Main.php', 62, [...])
+ 2 SYSTEMPATH\CodeIgniter.php(919): App\Controllers\Main->checking()
+ 3 SYSTEMPATH\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Main))
+ 4 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+INFO - 2023-11-13 13:59:55 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2023-11-13 13:59:55 --> Undefined variable: session
+in APPPATH\Controllers\Main.php on line 62.
+ 1 APPPATH\Controllers\Main.php(62): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined variable: session', 'C:\\wamp64\\www\\smart\\app\\Controllers\\Main.php', 62, [...])
+ 2 SYSTEMPATH\CodeIgniter.php(919): App\Controllers\Main->checking()
+ 3 SYSTEMPATH\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Main))
+ 4 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+INFO - 2023-11-13 13:59:55 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2023-11-13 13:59:55 --> Undefined variable: session
+in APPPATH\Controllers\Main.php on line 62.
+ 1 APPPATH\Controllers\Main.php(62): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined variable: session', 'C:\\wamp64\\www\\smart\\app\\Controllers\\Main.php', 62, [...])
+ 2 SYSTEMPATH\CodeIgniter.php(919): App\Controllers\Main->checking()
+ 3 SYSTEMPATH\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Main))
+ 4 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+INFO - 2023-11-13 13:59:56 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2023-11-13 13:59:56 --> Undefined variable: session
+in APPPATH\Controllers\Main.php on line 62.
+ 1 APPPATH\Controllers\Main.php(62): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined variable: session', 'C:\\wamp64\\www\\smart\\app\\Controllers\\Main.php', 62, [...])
+ 2 SYSTEMPATH\CodeIgniter.php(919): App\Controllers\Main->checking()
+ 3 SYSTEMPATH\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Main))
+ 4 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+INFO - 2023-11-13 13:59:56 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2023-11-13 13:59:56 --> Undefined variable: session
+in APPPATH\Controllers\Main.php on line 62.
+ 1 APPPATH\Controllers\Main.php(62): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined variable: session', 'C:\\wamp64\\www\\smart\\app\\Controllers\\Main.php', 62, [...])
+ 2 SYSTEMPATH\CodeIgniter.php(919): App\Controllers\Main->checking()
+ 3 SYSTEMPATH\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Main))
+ 4 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+INFO - 2023-11-13 13:59:56 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2023-11-13 13:59:56 --> Undefined variable: session
+in APPPATH\Controllers\Main.php on line 62.
+ 1 APPPATH\Controllers\Main.php(62): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined variable: session', 'C:\\wamp64\\www\\smart\\app\\Controllers\\Main.php', 62, [...])
+ 2 SYSTEMPATH\CodeIgniter.php(919): App\Controllers\Main->checking()
+ 3 SYSTEMPATH\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Main))
+ 4 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+INFO - 2023-11-13 13:59:56 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2023-11-13 13:59:56 --> Undefined variable: session
+in APPPATH\Controllers\Main.php on line 62.
+ 1 APPPATH\Controllers\Main.php(62): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined variable: session', 'C:\\wamp64\\www\\smart\\app\\Controllers\\Main.php', 62, [...])
+ 2 SYSTEMPATH\CodeIgniter.php(919): App\Controllers\Main->checking()
+ 3 SYSTEMPATH\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Main))
+ 4 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+INFO - 2023-11-13 13:59:56 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2023-11-13 13:59:56 --> Undefined variable: session
+in APPPATH\Controllers\Main.php on line 62.
+ 1 APPPATH\Controllers\Main.php(62): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined variable: session', 'C:\\wamp64\\www\\smart\\app\\Controllers\\Main.php', 62, [...])
+ 2 SYSTEMPATH\CodeIgniter.php(919): App\Controllers\Main->checking()
+ 3 SYSTEMPATH\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Main))
+ 4 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+INFO - 2023-11-13 13:59:56 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2023-11-13 13:59:56 --> Undefined variable: session
+in APPPATH\Controllers\Main.php on line 62.
+ 1 APPPATH\Controllers\Main.php(62): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined variable: session', 'C:\\wamp64\\www\\smart\\app\\Controllers\\Main.php', 62, [...])
+ 2 SYSTEMPATH\CodeIgniter.php(919): App\Controllers\Main->checking()
+ 3 SYSTEMPATH\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Main))
+ 4 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+INFO - 2023-11-13 13:59:56 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2023-11-13 13:59:56 --> Undefined variable: session
+in APPPATH\Controllers\Main.php on line 62.
+ 1 APPPATH\Controllers\Main.php(62): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined variable: session', 'C:\\wamp64\\www\\smart\\app\\Controllers\\Main.php', 62, [...])
+ 2 SYSTEMPATH\CodeIgniter.php(919): App\Controllers\Main->checking()
+ 3 SYSTEMPATH\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Main))
+ 4 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+INFO - 2023-11-13 13:59:56 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2023-11-13 13:59:56 --> Undefined variable: session
+in APPPATH\Controllers\Main.php on line 62.
+ 1 APPPATH\Controllers\Main.php(62): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined variable: session', 'C:\\wamp64\\www\\smart\\app\\Controllers\\Main.php', 62, [...])
+ 2 SYSTEMPATH\CodeIgniter.php(919): App\Controllers\Main->checking()
+ 3 SYSTEMPATH\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Main))
+ 4 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+INFO - 2023-11-13 14:00:19 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2023-11-13 14:00:19 --> Undefined variable: session
+in APPPATH\Controllers\Main.php on line 62.
+ 1 APPPATH\Controllers\Main.php(62): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined variable: session', 'C:\\wamp64\\www\\smart\\app\\Controllers\\Main.php', 62, [...])
+ 2 SYSTEMPATH\CodeIgniter.php(919): App\Controllers\Main->checking()
+ 3 SYSTEMPATH\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Main))
+ 4 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+INFO - 2023-11-13 14:05:33 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+ERROR - 2023-11-13 14:05:33 --> mysqli_sql_exception: Champ 'reference' inconnu dans field list in C:\wamp64\www\smart\system\Database\MySQLi\Connection.php:306
+Stack trace:
+#0 C:\wamp64\www\smart\system\Database\MySQLi\Connection.php(306): mysqli->query('INSERT INTO `se...', 0)
+#1 C:\wamp64\www\smart\system\Database\BaseConnection.php(692): CodeIgniter\Database\MySQLi\Connection->execute('INSERT INTO `se...')
+#2 C:\wamp64\www\smart\system\Database\BaseConnection.php(606): CodeIgniter\Database\BaseConnection->simpleQuery('INSERT INTO `se...')
+#3 C:\wamp64\www\smart\system\Database\BaseBuilder.php(2308): CodeIgniter\Database\BaseConnection->query('INSERT INTO `se...', Array, false)
+#4 C:\wamp64\www\smart\app\Models\Nano.php(18): CodeIgniter\Database\BaseBuilder->insert(Array)
+#5 C:\wamp64\www\smart\app\Controllers\Main.php(62): App\Models\Nano->saves('services', Array)
+#6 C:\wamp64\www\smart\system\CodeIgniter.php(919): App\Controllers\Main->checking()
+#7 C:\wamp64\www\smart\system\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Main))
+#8 C:\wamp64\www\smart\system\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#9 C:\wamp64\www\smart\index.php(79): CodeIgniter\CodeIgniter->run()
+#10 {main}
+CRITICAL - 2023-11-13 14:05:33 --> Champ 'reference' inconnu dans field list
+in SYSTEMPATH\Database\BaseConnection.php on line 646.
+ 1 SYSTEMPATH\Database\BaseBuilder.php(2308): CodeIgniter\Database\BaseConnection->query('INSERT INTO `services` (`reference`, `date_checking_entree`) VALUES (:reference:, :date_checking_entree:)', [...], false)
+ 2 APPPATH\Models\Nano.php(18): CodeIgniter\Database\BaseBuilder->insert([...])
+ 3 APPPATH\Controllers\Main.php(62): App\Models\Nano->saves('services', [...])
+ 4 SYSTEMPATH\CodeIgniter.php(919): App\Controllers\Main->checking()
+ 5 SYSTEMPATH\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Main))
+ 6 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+INFO - 2023-11-13 14:05:42 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+ERROR - 2023-11-13 14:05:42 --> mysqli_sql_exception: Champ 'reference' inconnu dans field list in C:\wamp64\www\smart\system\Database\MySQLi\Connection.php:306
+Stack trace:
+#0 C:\wamp64\www\smart\system\Database\MySQLi\Connection.php(306): mysqli->query('INSERT INTO `se...', 0)
+#1 C:\wamp64\www\smart\system\Database\BaseConnection.php(692): CodeIgniter\Database\MySQLi\Connection->execute('INSERT INTO `se...')
+#2 C:\wamp64\www\smart\system\Database\BaseConnection.php(606): CodeIgniter\Database\BaseConnection->simpleQuery('INSERT INTO `se...')
+#3 C:\wamp64\www\smart\system\Database\BaseBuilder.php(2308): CodeIgniter\Database\BaseConnection->query('INSERT INTO `se...', Array, false)
+#4 C:\wamp64\www\smart\app\Models\Nano.php(18): CodeIgniter\Database\BaseBuilder->insert(Array)
+#5 C:\wamp64\www\smart\app\Controllers\Main.php(62): App\Models\Nano->saves('services', Array)
+#6 C:\wamp64\www\smart\system\CodeIgniter.php(919): App\Controllers\Main->checking()
+#7 C:\wamp64\www\smart\system\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Main))
+#8 C:\wamp64\www\smart\system\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#9 C:\wamp64\www\smart\index.php(79): CodeIgniter\CodeIgniter->run()
+#10 {main}
+CRITICAL - 2023-11-13 14:05:42 --> Champ 'reference' inconnu dans field list
+in SYSTEMPATH\Database\BaseConnection.php on line 646.
+ 1 SYSTEMPATH\Database\BaseBuilder.php(2308): CodeIgniter\Database\BaseConnection->query('INSERT INTO `services` (`reference`, `date_checking_entree`) VALUES (:reference:, :date_checking_entree:)', [...], false)
+ 2 APPPATH\Models\Nano.php(18): CodeIgniter\Database\BaseBuilder->insert([...])
+ 3 APPPATH\Controllers\Main.php(62): App\Models\Nano->saves('services', [...])
+ 4 SYSTEMPATH\CodeIgniter.php(919): App\Controllers\Main->checking()
+ 5 SYSTEMPATH\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Main))
+ 6 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+INFO - 2023-11-13 14:05:43 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+ERROR - 2023-11-13 14:05:43 --> mysqli_sql_exception: Champ 'reference' inconnu dans field list in C:\wamp64\www\smart\system\Database\MySQLi\Connection.php:306
+Stack trace:
+#0 C:\wamp64\www\smart\system\Database\MySQLi\Connection.php(306): mysqli->query('INSERT INTO `se...', 0)
+#1 C:\wamp64\www\smart\system\Database\BaseConnection.php(692): CodeIgniter\Database\MySQLi\Connection->execute('INSERT INTO `se...')
+#2 C:\wamp64\www\smart\system\Database\BaseConnection.php(606): CodeIgniter\Database\BaseConnection->simpleQuery('INSERT INTO `se...')
+#3 C:\wamp64\www\smart\system\Database\BaseBuilder.php(2308): CodeIgniter\Database\BaseConnection->query('INSERT INTO `se...', Array, false)
+#4 C:\wamp64\www\smart\app\Models\Nano.php(18): CodeIgniter\Database\BaseBuilder->insert(Array)
+#5 C:\wamp64\www\smart\app\Controllers\Main.php(62): App\Models\Nano->saves('services', Array)
+#6 C:\wamp64\www\smart\system\CodeIgniter.php(919): App\Controllers\Main->checking()
+#7 C:\wamp64\www\smart\system\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Main))
+#8 C:\wamp64\www\smart\system\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#9 C:\wamp64\www\smart\index.php(79): CodeIgniter\CodeIgniter->run()
+#10 {main}
+CRITICAL - 2023-11-13 14:05:43 --> Champ 'reference' inconnu dans field list
+in SYSTEMPATH\Database\BaseConnection.php on line 646.
+ 1 SYSTEMPATH\Database\BaseBuilder.php(2308): CodeIgniter\Database\BaseConnection->query('INSERT INTO `services` (`reference`, `date_checking_entree`) VALUES (:reference:, :date_checking_entree:)', [...], false)
+ 2 APPPATH\Models\Nano.php(18): CodeIgniter\Database\BaseBuilder->insert([...])
+ 3 APPPATH\Controllers\Main.php(62): App\Models\Nano->saves('services', [...])
+ 4 SYSTEMPATH\CodeIgniter.php(919): App\Controllers\Main->checking()
+ 5 SYSTEMPATH\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Main))
+ 6 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+INFO - 2023-11-13 14:05:43 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+ERROR - 2023-11-13 14:05:43 --> mysqli_sql_exception: Champ 'reference' inconnu dans field list in C:\wamp64\www\smart\system\Database\MySQLi\Connection.php:306
+Stack trace:
+#0 C:\wamp64\www\smart\system\Database\MySQLi\Connection.php(306): mysqli->query('INSERT INTO `se...', 0)
+#1 C:\wamp64\www\smart\system\Database\BaseConnection.php(692): CodeIgniter\Database\MySQLi\Connection->execute('INSERT INTO `se...')
+#2 C:\wamp64\www\smart\system\Database\BaseConnection.php(606): CodeIgniter\Database\BaseConnection->simpleQuery('INSERT INTO `se...')
+#3 C:\wamp64\www\smart\system\Database\BaseBuilder.php(2308): CodeIgniter\Database\BaseConnection->query('INSERT INTO `se...', Array, false)
+#4 C:\wamp64\www\smart\app\Models\Nano.php(18): CodeIgniter\Database\BaseBuilder->insert(Array)
+#5 C:\wamp64\www\smart\app\Controllers\Main.php(62): App\Models\Nano->saves('services', Array)
+#6 C:\wamp64\www\smart\system\CodeIgniter.php(919): App\Controllers\Main->checking()
+#7 C:\wamp64\www\smart\system\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Main))
+#8 C:\wamp64\www\smart\system\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#9 C:\wamp64\www\smart\index.php(79): CodeIgniter\CodeIgniter->run()
+#10 {main}
+CRITICAL - 2023-11-13 14:05:43 --> Champ 'reference' inconnu dans field list
+in SYSTEMPATH\Database\BaseConnection.php on line 646.
+ 1 SYSTEMPATH\Database\BaseBuilder.php(2308): CodeIgniter\Database\BaseConnection->query('INSERT INTO `services` (`reference`, `date_checking_entree`) VALUES (:reference:, :date_checking_entree:)', [...], false)
+ 2 APPPATH\Models\Nano.php(18): CodeIgniter\Database\BaseBuilder->insert([...])
+ 3 APPPATH\Controllers\Main.php(62): App\Models\Nano->saves('services', [...])
+ 4 SYSTEMPATH\CodeIgniter.php(919): App\Controllers\Main->checking()
+ 5 SYSTEMPATH\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Main))
+ 6 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+INFO - 2023-11-13 14:05:43 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+ERROR - 2023-11-13 14:05:43 --> mysqli_sql_exception: Champ 'reference' inconnu dans field list in C:\wamp64\www\smart\system\Database\MySQLi\Connection.php:306
+Stack trace:
+#0 C:\wamp64\www\smart\system\Database\MySQLi\Connection.php(306): mysqli->query('INSERT INTO `se...', 0)
+#1 C:\wamp64\www\smart\system\Database\BaseConnection.php(692): CodeIgniter\Database\MySQLi\Connection->execute('INSERT INTO `se...')
+#2 C:\wamp64\www\smart\system\Database\BaseConnection.php(606): CodeIgniter\Database\BaseConnection->simpleQuery('INSERT INTO `se...')
+#3 C:\wamp64\www\smart\system\Database\BaseBuilder.php(2308): CodeIgniter\Database\BaseConnection->query('INSERT INTO `se...', Array, false)
+#4 C:\wamp64\www\smart\app\Models\Nano.php(18): CodeIgniter\Database\BaseBuilder->insert(Array)
+#5 C:\wamp64\www\smart\app\Controllers\Main.php(62): App\Models\Nano->saves('services', Array)
+#6 C:\wamp64\www\smart\system\CodeIgniter.php(919): App\Controllers\Main->checking()
+#7 C:\wamp64\www\smart\system\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Main))
+#8 C:\wamp64\www\smart\system\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#9 C:\wamp64\www\smart\index.php(79): CodeIgniter\CodeIgniter->run()
+#10 {main}
+CRITICAL - 2023-11-13 14:05:43 --> Champ 'reference' inconnu dans field list
+in SYSTEMPATH\Database\BaseConnection.php on line 646.
+ 1 SYSTEMPATH\Database\BaseBuilder.php(2308): CodeIgniter\Database\BaseConnection->query('INSERT INTO `services` (`reference`, `date_checking_entree`) VALUES (:reference:, :date_checking_entree:)', [...], false)
+ 2 APPPATH\Models\Nano.php(18): CodeIgniter\Database\BaseBuilder->insert([...])
+ 3 APPPATH\Controllers\Main.php(62): App\Models\Nano->saves('services', [...])
+ 4 SYSTEMPATH\CodeIgniter.php(919): App\Controllers\Main->checking()
+ 5 SYSTEMPATH\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Main))
+ 6 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+INFO - 2023-11-13 14:05:43 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+ERROR - 2023-11-13 14:05:43 --> mysqli_sql_exception: Champ 'reference' inconnu dans field list in C:\wamp64\www\smart\system\Database\MySQLi\Connection.php:306
+Stack trace:
+#0 C:\wamp64\www\smart\system\Database\MySQLi\Connection.php(306): mysqli->query('INSERT INTO `se...', 0)
+#1 C:\wamp64\www\smart\system\Database\BaseConnection.php(692): CodeIgniter\Database\MySQLi\Connection->execute('INSERT INTO `se...')
+#2 C:\wamp64\www\smart\system\Database\BaseConnection.php(606): CodeIgniter\Database\BaseConnection->simpleQuery('INSERT INTO `se...')
+#3 C:\wamp64\www\smart\system\Database\BaseBuilder.php(2308): CodeIgniter\Database\BaseConnection->query('INSERT INTO `se...', Array, false)
+#4 C:\wamp64\www\smart\app\Models\Nano.php(18): CodeIgniter\Database\BaseBuilder->insert(Array)
+#5 C:\wamp64\www\smart\app\Controllers\Main.php(62): App\Models\Nano->saves('services', Array)
+#6 C:\wamp64\www\smart\system\CodeIgniter.php(919): App\Controllers\Main->checking()
+#7 C:\wamp64\www\smart\system\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Main))
+#8 C:\wamp64\www\smart\system\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#9 C:\wamp64\www\smart\index.php(79): CodeIgniter\CodeIgniter->run()
+#10 {main}
+CRITICAL - 2023-11-13 14:05:43 --> Champ 'reference' inconnu dans field list
+in SYSTEMPATH\Database\BaseConnection.php on line 646.
+ 1 SYSTEMPATH\Database\BaseBuilder.php(2308): CodeIgniter\Database\BaseConnection->query('INSERT INTO `services` (`reference`, `date_checking_entree`) VALUES (:reference:, :date_checking_entree:)', [...], false)
+ 2 APPPATH\Models\Nano.php(18): CodeIgniter\Database\BaseBuilder->insert([...])
+ 3 APPPATH\Controllers\Main.php(62): App\Models\Nano->saves('services', [...])
+ 4 SYSTEMPATH\CodeIgniter.php(919): App\Controllers\Main->checking()
+ 5 SYSTEMPATH\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Main))
+ 6 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+INFO - 2023-11-13 14:05:43 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+ERROR - 2023-11-13 14:05:43 --> mysqli_sql_exception: Champ 'reference' inconnu dans field list in C:\wamp64\www\smart\system\Database\MySQLi\Connection.php:306
+Stack trace:
+#0 C:\wamp64\www\smart\system\Database\MySQLi\Connection.php(306): mysqli->query('INSERT INTO `se...', 0)
+#1 C:\wamp64\www\smart\system\Database\BaseConnection.php(692): CodeIgniter\Database\MySQLi\Connection->execute('INSERT INTO `se...')
+#2 C:\wamp64\www\smart\system\Database\BaseConnection.php(606): CodeIgniter\Database\BaseConnection->simpleQuery('INSERT INTO `se...')
+#3 C:\wamp64\www\smart\system\Database\BaseBuilder.php(2308): CodeIgniter\Database\BaseConnection->query('INSERT INTO `se...', Array, false)
+#4 C:\wamp64\www\smart\app\Models\Nano.php(18): CodeIgniter\Database\BaseBuilder->insert(Array)
+#5 C:\wamp64\www\smart\app\Controllers\Main.php(62): App\Models\Nano->saves('services', Array)
+#6 C:\wamp64\www\smart\system\CodeIgniter.php(919): App\Controllers\Main->checking()
+#7 C:\wamp64\www\smart\system\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Main))
+#8 C:\wamp64\www\smart\system\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#9 C:\wamp64\www\smart\index.php(79): CodeIgniter\CodeIgniter->run()
+#10 {main}
+CRITICAL - 2023-11-13 14:05:43 --> Champ 'reference' inconnu dans field list
+in SYSTEMPATH\Database\BaseConnection.php on line 646.
+ 1 SYSTEMPATH\Database\BaseBuilder.php(2308): CodeIgniter\Database\BaseConnection->query('INSERT INTO `services` (`reference`, `date_checking_entree`) VALUES (:reference:, :date_checking_entree:)', [...], false)
+ 2 APPPATH\Models\Nano.php(18): CodeIgniter\Database\BaseBuilder->insert([...])
+ 3 APPPATH\Controllers\Main.php(62): App\Models\Nano->saves('services', [...])
+ 4 SYSTEMPATH\CodeIgniter.php(919): App\Controllers\Main->checking()
+ 5 SYSTEMPATH\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Main))
+ 6 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+INFO - 2023-11-13 14:06:18 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-11-13 14:06:19 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-11-13 14:06:29 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+ERROR - 2023-11-13 14:06:29 --> mysqli_sql_exception: Champ 'reference' inconnu dans field list in C:\wamp64\www\smart\system\Database\MySQLi\Connection.php:306
+Stack trace:
+#0 C:\wamp64\www\smart\system\Database\MySQLi\Connection.php(306): mysqli->query('INSERT INTO `se...', 0)
+#1 C:\wamp64\www\smart\system\Database\BaseConnection.php(692): CodeIgniter\Database\MySQLi\Connection->execute('INSERT INTO `se...')
+#2 C:\wamp64\www\smart\system\Database\BaseConnection.php(606): CodeIgniter\Database\BaseConnection->simpleQuery('INSERT INTO `se...')
+#3 C:\wamp64\www\smart\system\Database\BaseBuilder.php(2308): CodeIgniter\Database\BaseConnection->query('INSERT INTO `se...', Array, false)
+#4 C:\wamp64\www\smart\app\Models\Nano.php(18): CodeIgniter\Database\BaseBuilder->insert(Array)
+#5 C:\wamp64\www\smart\app\Controllers\Main.php(62): App\Models\Nano->saves('services', Array)
+#6 C:\wamp64\www\smart\system\CodeIgniter.php(919): App\Controllers\Main->checking()
+#7 C:\wamp64\www\smart\system\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Main))
+#8 C:\wamp64\www\smart\system\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#9 C:\wamp64\www\smart\index.php(79): CodeIgniter\CodeIgniter->run()
+#10 {main}
+CRITICAL - 2023-11-13 14:06:29 --> Champ 'reference' inconnu dans field list
+in SYSTEMPATH\Database\BaseConnection.php on line 646.
+ 1 SYSTEMPATH\Database\BaseBuilder.php(2308): CodeIgniter\Database\BaseConnection->query('INSERT INTO `services` (`reference`, `date_checking_entree`) VALUES (:reference:, :date_checking_entree:)', [...], false)
+ 2 APPPATH\Models\Nano.php(18): CodeIgniter\Database\BaseBuilder->insert([...])
+ 3 APPPATH\Controllers\Main.php(62): App\Models\Nano->saves('services', [...])
+ 4 SYSTEMPATH\CodeIgniter.php(919): App\Controllers\Main->checking()
+ 5 SYSTEMPATH\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Main))
+ 6 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+INFO - 2023-11-13 14:07:24 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-11-13 14:07:33 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-11-13 14:08:10 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-11-13 14:08:12 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-11-13 14:11:44 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+ERROR - 2023-11-13 14:11:44 --> mysqli_sql_exception: Erreur de syntaxe près de 'NULL ORDER BY date_checking_entree DESC LIMIT 5' à la ligne 1 in C:\wamp64\www\smart\system\Database\MySQLi\Connection.php:306
+Stack trace:
+#0 C:\wamp64\www\smart\system\Database\MySQLi\Connection.php(306): mysqli->query('SELECT * FROM e...', 0)
+#1 C:\wamp64\www\smart\system\Database\BaseConnection.php(692): CodeIgniter\Database\MySQLi\Connection->execute('SELECT * FROM e...')
+#2 C:\wamp64\www\smart\system\Database\BaseConnection.php(606): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT * FROM e...')
+#3 C:\wamp64\www\smart\app\Models\Nano.php(86): CodeIgniter\Database\BaseConnection->query('SELECT * FROM e...')
+#4 C:\wamp64\www\smart\app\Controllers\Admin.php(22): App\Models\Nano->query_result('SELECT * FROM e...')
+#5 C:\wamp64\www\smart\system\CodeIgniter.php(919): App\Controllers\Admin->index()
+#6 C:\wamp64\www\smart\system\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin))
+#7 C:\wamp64\www\smart\system\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 C:\wamp64\www\smart\index.php(79): CodeIgniter\CodeIgniter->run()
+#9 {main}
+CRITICAL - 2023-11-13 14:11:44 --> Erreur de syntaxe près de 'NULL ORDER BY date_checking_entree DESC LIMIT 5' à la ligne 1
+in SYSTEMPATH\Database\BaseConnection.php on line 646.
+ 1 APPPATH\Models\Nano.php(86): CodeIgniter\Database\BaseConnection->query('SELECT * FROM entree_sortie WHERE date_checking_entree <>"0000-00-00 00:00:00" NULL ORDER BY date_checking_entree DESC LIMIT 5 ')
+ 2 APPPATH\Controllers\Admin.php(22): App\Models\Nano->query_result('SELECT * FROM entree_sortie WHERE date_checking_entree <>"0000-00-00 00:00:00" NULL ORDER BY date_checking_entree DESC LIMIT 5 ')
+ 3 SYSTEMPATH\CodeIgniter.php(919): App\Controllers\Admin->index()
+ 4 SYSTEMPATH\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin))
+ 5 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 6 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+INFO - 2023-11-13 14:12:06 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-11-13 14:13:32 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-11-13 14:13:41 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-11-13 14:13:42 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-11-13 14:13:43 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-11-13 14:13:44 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-11-13 14:13:45 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-11-13 14:13:57 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-11-13 14:13:58 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-11-13 14:14:02 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-11-13 14:14:03 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-11-13 14:14:03 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-11-13 14:14:04 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-11-13 14:15:08 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-11-13 14:15:09 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-11-13 14:15:10 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-11-13 14:15:40 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-11-13 14:15:41 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-11-13 14:17:52 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-11-13 14:19:40 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-11-13 14:19:40 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-11-13 14:19:40 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-11-13 14:19:40 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-11-13 14:19:40 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-11-13 14:19:40 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-11-13 14:56:30 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-11-13 14:58:02 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-11-13 14:58:13 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-11-13 14:58:14 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-11-13 14:58:35 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-11-13 14:58:50 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-11-13 14:58:50 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-11-13 14:58:50 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-11-13 14:58:51 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-11-13 14:58:51 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-11-13 14:59:06 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-11-13 15:00:03 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-11-13 15:00:04 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-11-13 15:00:04 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-11-13 15:00:17 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-11-13 15:01:28 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-11-13 15:01:28 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-11-13 15:01:28 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-11-13 15:02:39 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-11-13 15:02:39 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-11-13 15:02:39 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-11-13 15:07:12 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-11-13 15:07:23 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-11-13 15:07:23 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-11-13 15:07:23 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-11-13 15:07:23 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-11-13 15:07:23 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-11-13 15:07:24 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-11-13 15:07:24 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-11-13 15:07:24 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-11-13 15:07:25 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-11-13 15:07:37 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-11-13 15:07:37 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-11-13 15:07:37 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-11-13 15:07:45 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-11-13 15:07:46 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-11-13 15:07:46 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-11-13 15:07:46 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-11-13 15:07:46 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-11-13 15:08:03 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-11-13 15:08:17 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-11-13 15:08:17 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-11-13 15:08:17 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-11-13 15:09:29 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-11-13 15:32:51 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-11-13 15:38:12 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-11-13 15:39:47 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-11-13 15:40:45 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-11-13 15:40:47 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-11-13 15:41:39 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-11-13 15:41:52 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-11-13 15:45:58 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-11-13 15:46:01 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-11-13 15:46:14 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-11-13 15:47:04 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-11-13 15:49:46 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-11-13 15:49:54 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-11-13 15:50:07 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-11-13 15:50:08 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-11-13 15:50:15 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-11-13 15:50:17 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-11-13 15:51:52 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-11-13 15:51:56 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-11-13 15:52:46 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-11-13 15:52:46 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-11-13 15:52:46 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-11-13 15:52:46 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-11-13 15:52:46 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-11-13 15:52:47 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-11-13 15:52:47 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-11-13 15:52:47 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-11-13 15:52:47 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-11-13 15:52:47 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-11-13 15:52:47 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-11-13 15:52:47 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-11-13 15:52:47 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-11-13 15:52:47 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-11-13 15:52:47 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-11-13 15:52:47 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-11-13 15:52:47 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-11-13 15:52:47 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-11-13 15:52:47 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-11-13 15:52:47 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-11-13 15:52:48 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-11-13 15:52:48 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-11-13 15:52:48 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-11-13 15:52:48 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-11-13 15:52:48 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-11-13 15:52:48 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-11-13 15:52:49 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-11-13 15:52:49 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-11-13 15:52:49 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-11-13 15:52:49 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-11-13 15:52:49 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-11-13 15:52:49 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-11-13 15:52:49 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-11-13 15:52:49 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-11-13 15:52:49 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-11-13 15:52:49 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-11-13 15:52:49 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-11-13 15:52:49 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-11-13 15:52:49 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-11-13 15:52:49 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-11-13 15:52:54 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-11-13 15:52:54 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-11-13 15:52:54 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-11-13 15:52:54 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-11-13 15:52:55 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-11-13 15:52:55 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-11-13 15:52:55 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-11-13 15:52:55 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-11-13 15:52:55 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-11-13 15:52:55 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-11-13 15:52:55 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-11-13 15:52:55 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-11-13 15:52:55 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-11-13 15:52:55 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-11-13 15:52:55 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-11-13 15:52:55 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-11-13 15:52:55 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-11-13 15:52:55 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-11-13 15:52:55 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-11-13 15:52:55 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-11-13 15:53:04 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-11-13 15:53:18 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-11-13 15:53:56 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-11-13 15:54:01 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-11-13 15:54:01 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-11-13 15:55:02 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-11-13 15:55:16 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-11-13 15:55:18 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-11-13 15:56:07 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-11-13 15:56:08 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-11-13 15:56:35 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+ERROR - 2023-11-13 15:56:35 --> mysqli_sql_exception: Incorrect DATETIME value: '0000' in C:\wamp64\www\smart\system\Database\MySQLi\Connection.php:306
+Stack trace:
+#0 C:\wamp64\www\smart\system\Database\MySQLi\Connection.php(306): mysqli->query('SELECT * FROM e...', 0)
+#1 C:\wamp64\www\smart\system\Database\BaseConnection.php(692): CodeIgniter\Database\MySQLi\Connection->execute('SELECT * FROM e...')
+#2 C:\wamp64\www\smart\system\Database\BaseConnection.php(606): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT * FROM e...')
+#3 C:\wamp64\www\smart\app\Models\Nano.php(86): CodeIgniter\Database\BaseConnection->query('SELECT * FROM e...')
+#4 C:\wamp64\www\smart\app\Controllers\Admin.php(22): App\Models\Nano->query_result('SELECT * FROM e...')
+#5 C:\wamp64\www\smart\system\CodeIgniter.php(919): App\Controllers\Admin->index()
+#6 C:\wamp64\www\smart\system\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin))
+#7 C:\wamp64\www\smart\system\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 C:\wamp64\www\smart\index.php(79): CodeIgniter\CodeIgniter->run()
+#9 {main}
+CRITICAL - 2023-11-13 15:56:35 --> Incorrect DATETIME value: '0000'
+in SYSTEMPATH\Database\BaseConnection.php on line 646.
+ 1 APPPATH\Models\Nano.php(86): CodeIgniter\Database\BaseConnection->query('SELECT * FROM entree_sortie WHERE date_checking_entree ="0000" ORDER BY date_checking_entree DESC LIMIT 5 ')
+ 2 APPPATH\Controllers\Admin.php(22): App\Models\Nano->query_result('SELECT * FROM entree_sortie WHERE date_checking_entree ="0000" ORDER BY date_checking_entree DESC LIMIT 5 ')
+ 3 SYSTEMPATH\CodeIgniter.php(919): App\Controllers\Admin->index()
+ 4 SYSTEMPATH\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin))
+ 5 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 6 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+INFO - 2023-11-13 15:56:41 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+ERROR - 2023-11-13 15:56:41 --> mysqli_sql_exception: Incorrect DATETIME value: '0000' in C:\wamp64\www\smart\system\Database\MySQLi\Connection.php:306
+Stack trace:
+#0 C:\wamp64\www\smart\system\Database\MySQLi\Connection.php(306): mysqli->query('SELECT * FROM e...', 0)
+#1 C:\wamp64\www\smart\system\Database\BaseConnection.php(692): CodeIgniter\Database\MySQLi\Connection->execute('SELECT * FROM e...')
+#2 C:\wamp64\www\smart\system\Database\BaseConnection.php(606): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT * FROM e...')
+#3 C:\wamp64\www\smart\app\Models\Nano.php(86): CodeIgniter\Database\BaseConnection->query('SELECT * FROM e...')
+#4 C:\wamp64\www\smart\app\Controllers\Admin.php(22): App\Models\Nano->query_result('SELECT * FROM e...')
+#5 C:\wamp64\www\smart\system\CodeIgniter.php(919): App\Controllers\Admin->index()
+#6 C:\wamp64\www\smart\system\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin))
+#7 C:\wamp64\www\smart\system\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 C:\wamp64\www\smart\index.php(79): CodeIgniter\CodeIgniter->run()
+#9 {main}
+CRITICAL - 2023-11-13 15:56:41 --> Incorrect DATETIME value: '0000'
+in SYSTEMPATH\Database\BaseConnection.php on line 646.
+ 1 APPPATH\Models\Nano.php(86): CodeIgniter\Database\BaseConnection->query('SELECT * FROM entree_sortie WHERE date_checking_entree ="0000" ORDER BY date_checking_entree DESC LIMIT 5 ')
+ 2 APPPATH\Controllers\Admin.php(22): App\Models\Nano->query_result('SELECT * FROM entree_sortie WHERE date_checking_entree ="0000" ORDER BY date_checking_entree DESC LIMIT 5 ')
+ 3 SYSTEMPATH\CodeIgniter.php(919): App\Controllers\Admin->index()
+ 4 SYSTEMPATH\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin))
+ 5 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 6 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+INFO - 2023-11-13 15:56:46 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-11-13 15:57:19 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-11-13 15:57:20 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-11-13 15:57:23 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-11-13 15:57:24 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-11-13 15:57:34 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-11-13 16:00:20 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-11-13 16:00:21 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-11-13 16:00:33 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-11-13 16:00:33 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-11-13 16:02:38 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-11-13 16:04:56 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-11-13 16:05:05 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-11-13 16:28:13 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-11-13 16:28:43 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-11-13 16:28:45 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-11-13 16:28:45 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-11-13 16:28:59 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
